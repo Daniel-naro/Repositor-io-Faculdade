@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+  
+</header>
+<body>
+    <h1>Atividade:</h1>
+    <script>
+         // Atividade de JavaScript, Atividade propostas em sala. 
+        // Primeira atividade: Um programa que recebe, Nome, duas notas e a média das notas, e com a média informe se o aluno foi aprovado ou não.
+       let nome = prompt("Digite seu nome:");
+        let nota = parseFloat(prompt("Digite a primeira nota:"));
+        let nota2 = parseFloat(prompt("Digite a segunda nota:"));
+        let media = (nota + nota2) / 2;
+        document.write("Sua média é: " + media + " " );
+
+        
+        if (media >= 6.0) {
+            document.write( nome + ", você foi aprovado!");
+        } else {
+            document.write(nome + ", você foi reprovado!");
+        } 
+        // Segunda atividade: Apresentara soma de todos os numeros pares no intervalo de 3 a 15.
+         let soma=0;
+        for (let i = 3; i <=15; i++) {
+           if (i % 2== 0) {
+           soma=soma + i;
+           }
+        }
+        document.write("A soma dos números ímpares entre 3 e 15 é: " + soma);
+        
+        // Terceira atividade: Receber uma temperatura em Celcius, e mostar a mesma em Fahrenheit. 
+       let temperaturaCelsius = parseFloat(prompt("Digite a temperatura em Celsius:"));
+         let temperaturaFahrenheit = (temperaturaCelsius * 1.8) + 32;
+        document.write("A temperatura em Fahrenheit é: " + temperaturaFahrenheit);
+     
+      
+    </script>
+    
+</body>
+</html>
